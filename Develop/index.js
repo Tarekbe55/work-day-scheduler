@@ -45,10 +45,20 @@ $(document).ready(function () {
     $(".container").append(row);
 
     getLocalStorage(i);
-
-
   }
+  //function to color rows for present and future
+  function colorChange() {
+    var currentTime = new Date().getHours();
+    for (var i = 9; i < 18; i++) {
+      console.log(currentTime)
+      if ($(`#${i}`).data("time") == currentTime) {
+        $(`text${i}`).addClass("present");
+      } else if (currentTime < $(`#${i}`).data("time")) {
+        $(`text${i}`).addClass("future");
 
+      }
+    }
+  }
 
 
 
