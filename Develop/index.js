@@ -59,6 +59,9 @@ $(document).ready(function () {
       }
     }
   }
+  setInterval(function () {
+    colorChange();
+  }, 1000);
 
 
 
