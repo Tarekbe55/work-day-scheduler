@@ -9,14 +9,7 @@ function getLocalStorage(key) {
 $(document).ready(function () {
 
 
-  //function to adjust time (am/pm)
-  function formatAMPM(hours) {
-    var ampm = hours >= 12 ? 'pm' : 'am';
-    hours = hours % 12;
-    hours = hours ? hours : 12;
-    return hours + ampm;
-  }
-  formatAMPM();
+
 
   // using moment.js to input the date for #currentday
   $("#currentDay").text(moment().format("dddd, MMMM Do"));
@@ -29,7 +22,7 @@ $(document).ready(function () {
     var time = $('<div class="col-sm-2"> <p class="hour">' + formatAMPM(i) + '</p>');
 
     // column 2 that will hold the text area 
-    var txtArea = $(`<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);
+    var txtArea = $(`<div class="col lg-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);
 
     // column 3 that will hold the save button
     var saveBtn = $(`<div class="col-sm-2"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>`)
@@ -46,11 +39,21 @@ $(document).ready(function () {
 
     getLocalStorage(i);
   }
+
+  //function to adjust time (am/pm)
+  function formatAMPM(hours) {
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12;
+    return hours + ampm;
+  }
+  formatAMPM();
+
+
   //function to color rows for present and future
   function colorChange() {
     var currentTime = new Date().getHours();
     for (var i = 9; i < 18; i++) {
-      console.log(currentTime)
       if ($(`#${i}`).data("time") == currentTime) {
         $(`text${i}`).addClass("present");
       } else if (currentTime < $(`#${i}`).data("time")) {
@@ -63,6 +66,12 @@ $(document).ready(function () {
     colorChange();
   }, 1000);
 
+  var saveBtn = $(".saveBtn");
+  saveBtn.on("click", function () {
+    var eventId = $(this).attr("id");
+    var eventText = $(this).parent().sibling().children(".description").val();
+    localStorage.setItem(eventId, eventText);
+  })
 
 
 })
