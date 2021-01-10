@@ -32,7 +32,7 @@ $(document).ready(function () {
     var txtArea = $(`<div class="col-sm-8 past"><textarea id=text${i} class="description" placeholder="Add your event here..."></textarea>`);
 
     // column 3 that will hold the save button
-    var saveBtn = $(`<div class="col-sm-2"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>`)
+    var saveBtn = $(`<div class="col-sm-2 button"><button class="saveBtn" id=${i}><i class="fas fa-save"></i></button>`)
 
 
     // adding the columns under each row
