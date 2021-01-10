@@ -64,10 +64,10 @@ $(document).ready(function () {
     colorChange();
   }, 1000);
 
-  var saveBtn = $(".saveBtn");
+  var saveBtn = $('.saveBtn');
   saveBtn.on('click', function () {
     var eventId = $(this).attr('id');
-    var eventText = $(this).parent().sibling().children('.description').val();
+    var eventText = $(this).parent().siblings().children('.description').val();
     localStorage.setItem(eventId, eventText);
 
   });
