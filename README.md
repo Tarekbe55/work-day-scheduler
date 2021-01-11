@@ -1,5 +1,10 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+## Description
+
+This is a one day work day scheduler for hours (9-5). past hours are highlighted in gray, present is highlighted in red and future is highlighted in green. The user will put the event in the text area and save it to the local storage using the save button provided. The event will stay on there once saved.
+
+
 ## Your Task
 
 Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
