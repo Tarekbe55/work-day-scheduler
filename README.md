@@ -7,6 +7,9 @@ This is a one day work day scheduler for hours (9-5). past hours are highlighted
 # Tech/framework used
 HTML, CSS, JavaScript 
 
+# Authors
+Tarek Behairy
+
 
 ## Your Task
 
