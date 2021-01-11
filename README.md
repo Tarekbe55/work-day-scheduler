@@ -2,10 +2,10 @@
 
 ## Description
 
-This is a one day work day scheduler for hours (9-5). past hours are highlighted in gray, present is highlighted in red and future is highlighted in green. The user will put the event in the text area and save it to the local storage using the save button provided. The event will stay on there once saved.
+This is a one day work day scheduler for hours (9-5). The calendar is color coded, past hours are highlighted in gray, present is highlighted in red and future is highlighted in green. The user will put the event in the text area and save it to the local storage using the save button provided. The event will stay on there once saved.
 
 ## Tech/framework used
-HTML, CSS, Bootstrap, jQuery 
+HTML, CSS, Bootstrap, jQuery and moment.js library 
 
 ## Authors
 Tarek Behairy
