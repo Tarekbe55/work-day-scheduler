@@ -15,7 +15,6 @@ Tarek Behairy
 ## Deployed application link
 https://tarekbe55.github.io/work-day-scheduler/.
 
-## Deployed application link
 
 # Contact
 Reach me at tbtarek@gmail.com for any questions
