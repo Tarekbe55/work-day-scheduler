@@ -10,6 +10,8 @@ HTML, CSS, JavaScript
 # Authors
 Tarek Behairy
 
+## Screenshots
+
 
 ## Your Task
 
