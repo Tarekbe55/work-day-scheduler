@@ -11,6 +11,7 @@ HTML, CSS, Bootstrap, jQuery and moment.js library
 Tarek Behairy
 
 ## Screenshots
+![day planner](assets/screenshots/screenshot.png)
 
 ## Deployed application link
 https://tarekbe55.github.io/work-day-scheduler/.
