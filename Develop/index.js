@@ -64,6 +64,8 @@ $(document).ready(function () {
     colorChange();
   }, 1000);
 
+
+  // event listener for the save button and saving it to the local storage
   var saveBtn = $('.saveBtn');
   saveBtn.on('click', function () {
     var eventId = $(this).attr('id');
